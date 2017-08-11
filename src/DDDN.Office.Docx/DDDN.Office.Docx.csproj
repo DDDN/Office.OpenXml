@@ -5,11 +5,15 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	</PropertyGroup>
+
   <PropertyGroup>
-    <Product>DDDN.Office.DOCX Library</Product>
+    <Product>DDDN.Office.Docx Library</Product>
     <Copyright>Copyright(C) 2017 Lukasz Jaskiewicz</Copyright>
     <Authors>Lukasz Jaskiewicz (lukasz@jaskiewicz.de)</Authors>
-    <Description>DDDN.Office.DOCX Library</Description>
+    <Description>DDDN.Office.Docx Library</Description>
     <PackageProjectUrl>www.jaskiewicz.de</PackageProjectUrl>
     <Version>0.0.0.1</Version>
     <AssemblyVersion>0.0.0.1</AssemblyVersion>
@@ -22,7 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Net\Html\DDDN.Net.Html.csproj" />
+    <ProjectReference Include="..\..\..\Logging\src\DDDN.Logging.Messages\DDDN.Logging.Messages.csproj" />
+    <ProjectReference Include="..\..\..\Net\src\DDDN.Net.Html\DDDN.Net.Html.csproj" />
   </ItemGroup>
 
 </Project>

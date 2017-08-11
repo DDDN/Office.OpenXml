@@ -1,5 +1,5 @@
 ﻿/*
-* DDDN.Office.DOCX.WStyleInfo
+* DDDN.Office.Docx.WStyleRunProperty
 * 
 * Copyright(C) 2017 Lukasz Jaskiewicz
 * Author: Lukasz Jaskiewicz (lukasz@jaskiewicz.de, devdone@outlook.com)
@@ -14,30 +14,17 @@
 * to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-using DocumentFormat.OpenXml.Wordprocessing;
-
-namespace DDDN.Office.DOCX
+namespace DDDN.Office.Docx
 {
-    /// <summary>
-    /// w:style
-    /// </summary>
-    public class WStyleInfo
+    public class WStyleRunProperty
     {
         /// <summary>
-        /// w:type
+        /// w:color
         /// </summary>
-        public string StyleType { get; set; }
+        public string FontColor { get; set; }
         /// <summary>
-        /// w:styleId
+        /// w:sz
         /// </summary>
-        public string StyleId { get; set; }
-        /// <summary>
-        /// w:basedOn
-        /// </summary>
-        public BasedOn BasedOnStyle { get; set; }
-        /// <summary>
-        /// w:rPr
-        /// </summary>
-        public WStyleRunProperty RunProperty { get; set; } = new WStyleRunProperty();
+        public string FontSize { get; set; }
     }
 }

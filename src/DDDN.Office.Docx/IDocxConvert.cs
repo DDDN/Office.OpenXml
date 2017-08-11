@@ -1,5 +1,5 @@
 ﻿/*
-* DDDN.Office.DOCX.WParagraphInfo
+* DDDN.Office.Docx.IDocxConvert
 * 
 * Copyright(C) 2017 Lukasz Jaskiewicz
 * Author: Lukasz Jaskiewicz (lukasz@jaskiewicz.de, devdone@outlook.com)
@@ -14,13 +14,11 @@
 * to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-using System.Collections.Generic;
-
-namespace DDDN.Office.DOCX
+namespace DDDN.Office.Docx
 {
-    public class WParagraphInfo
+	public interface IDocxConvert
 	{
-		public string Id { get; set; }
-		public List<WRunInfo> Runs { get; set; } = new List<WRunInfo>();
-	}
+		string GetHTML(string rootHtmlTagName);
+        string GetCSS();
+    }
 }
